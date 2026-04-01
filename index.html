@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI + Qimen | The Digital Oracle Webinar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "inverse-primary": "#735c00",
+                "outline": "#8e9196",
+                "surface-container-lowest": "#0c0e18",
+                "surface-variant": "#32343f",
+                "on-tertiary-fixed": "#1a1c1a",
+                "secondary-fixed": "#d7e2ff",
+                "on-error-container": "#ffdad6",
+                "surface-bright": "#373844",
+                "surface": "#11131d",
+                "tertiary": "#c6c7c3",
+                "error-container": "#93000a",
+                "background": "#11131d",
+                "tertiary-container": "#181b19",
+                "on-error": "#690005",
+                "secondary": "#bbc6e2",
+                "tertiary-fixed-dim": "#c6c7c3",
+                "on-primary-container": "#9f7f00",
+                "surface-container-low": "#191b26",
+                "primary": "#e9c349",
+                "inverse-surface": "#e1e1f0",
+                "on-surface": "#e1e1f0",
+                "on-secondary-fixed-variant": "#3c475d",
+                "on-secondary": "#263046",
+                "error": "#ffb4ab",
+                "on-background": "#e1e1f0",
+                "on-primary": "#3c2f00",
+                "inverse-on-surface": "#2e303b",
+                "primary-container": "#221900",
+                "primary-fixed": "#ffe088",
+                "surface-dim": "#11131d",
+                "surface-container-high": "#282934",
+                "secondary-fixed-dim": "#bbc6e2",
+                "outline-variant": "#44474c",
+                "surface-container": "#1d1f2a",
+                "on-primary-fixed": "#241a00",
+                "on-tertiary": "#2f312e",
+                "tertiary-fixed": "#e2e3df",
+                "surface-tint": "#e9c349",
+                "on-primary-fixed-variant": "#574500",
+                "secondary-container": "#3e4960",
+                "surface-container-highest": "#32343f",
+                "on-surface-variant": "#c4c6cc",
+                "on-secondary-fixed": "#101b30",
+                "on-tertiary-fixed-variant": "#454745",
+                "primary-fixed-dim": "#e9c349",
+                "on-secondary-container": "#adb8d3",
+                "on-tertiary-container": "#818380"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .celestial-glow {
+            background: radial-gradient(circle at center, #e9c349 0%, #574500 100%);
+        }
+        .aura-shadow {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 15px rgba(233, 195, 73, 0.05);
+        }
+        .glass-pill {
+            background: rgba(55, 56, 68, 0.4);
+            backdrop-filter: blur(24px);
+        }
+        .node-line {
+            background: linear-gradient(90deg, transparent, rgba(233, 195, 73, 0.1), transparent);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#11131d]/80 backdrop-blur-xl tonal-shift bg-gradient-to-b from-[#191b26] to-transparent shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-xl font-bold tracking-tighter text-[#e9c349] font-['Space_Grotesk']">AI + QIMEN</div>
+<div class="hidden md:flex gap-8 font-['Space_Grotesk'] tracking-tight">
+<a class="text-slate-400 hover:text-[#e9c349] transition-colors" href="#">Methodology</a>
+<a class="text-slate-400 hover:text-[#e9c349] transition-colors" href="#">Curriculum</a>
+<a class="text-slate-400 hover:text-[#e9c349] transition-colors" href="#">Results</a>
+<a class="text-slate-400 hover:text-[#e9c349] transition-colors" href="#">FAQ</a>
+</div>
+<a class="bg-[#e9c349] text-[#3c2f00] px-6 py-2 rounded-md font-bold tracking-tight scale-95 active:scale-90 transition-transform shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]" href="https://wa.link/w3vuoj" rel="noopener noreferrer" target="_blank">JOIN NOW</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 px-8 overflow-hidden min-h-[921px] flex flex-col justify-center">
+<div class="absolute top-0 right-0 w-full h-full opacity-20 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="Abstract golden energy flowing in cosmic dark space with geometric octagon patterns and digital neural network nodes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwlSsfAz8u37EycZ71EKZcteDP_5J1FunKtvsYy2D-NlI2_dN4KZxB_X2wDYVEetyIX4m6U-bBTV165-Ip6We6DMe7UATStVQ3D0ymlRBz9gUytbrspdg0-iVjRz-BkQ5b8kJ2i7piceWliM2fOPGplQZrbxKzeylutqbt8Vt1vq-DJqDH3Rhn6QPq29iD6DuyZb0dWZxA3Do852tLscaIqfdHWYWzbHBYig4RieNNStvBObJWddMeG8rvspHUqof9lMExDSdA0fs"/>
+</div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8 z-10">
+<span class="inline-block text-primary font-label text-sm tracking-[0.3em] uppercase mb-6">The Future of Strategy</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-8">
+                    你不是不努力 <br/>
+                    是你一直在<span class="text-primary italic">“错的方向”</span>用力
+                </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl leading-relaxed mb-12">
+                    这2小时，会让你第一次看懂：<br/>
+                    为什么别人开始副业赚钱，为什么你一直卡住？<br/>
+                    你真正适合的赚钱路径是什么。
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 items-center">
+<a class="celestial-glow text-on-primary px-10 py-5 rounded-md font-bold text-lg aura-shadow hover:scale-105 transition-transform text-center" href="https://wa.link/w3vuoj" rel="noopener noreferrer" target="_blank">
+                        Book My Free Seat (限30人)
+                    </a>
+<div class="glass-pill px-4 py-2 rounded-full flex items-center gap-3">
+<span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+<span class="text-sm font-medium">LIVE WEBINAR ON ZOOM</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 hidden lg:block relative">
+<div class="w-full aspect-square border border-outline-variant/10 rounded-full flex items-center justify-center p-8 bg-surface-container-low/30 backdrop-blur-sm">
+<div class="relative w-full h-full rounded-full border-4 border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-9xl" style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+<!-- Decorative Orbiting Elements -->
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-surface-container-high p-3 rounded-lg border border-primary/30 shadow-lg">
+<span class="material-symbols-outlined text-primary">data_thresholding</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Pain Points Section -->
+<section class="py-24 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline text-4xl font-bold mb-8">
+                    用 AI + 奇门，看懂你为什么一直<span class="text-primary">赚不到钱</span>
+</h2>
+<div class="space-y-6">
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-lg">想做副业，但一直找不到方向？</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-lg">看很多赚钱方法，但都不适合自己？</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-lg">很努力，但收入还是没有突破...</p>
+</div>
+<div class="p-6 bg-surface-container rounded-xl border-l-4 border-primary/40">
+<p class="text-lg">别人已经在赚，你还在试来试去？</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-center bg-surface-container-highest/20 p-10 rounded-2xl backdrop-blur-md border border-white/5">
+<span class="text-primary font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">visibility</span> THE SOLUTION
+                </span>
+<p class="text-xl leading-relaxed text-on-surface">
+                    在古代，奇门遁甲是用来排兵布阵，看清<span class="text-primary font-bold">“局势”</span>的系统。
+                    <br/><br/>
+                    今天，我们把这套逻辑结合 <span class="font-headline font-bold">AI</span>，帮你穿透迷雾，看清你的赚钱逻辑到底在哪里断了，以及如何精准翻身。
+                </p>
+<div class="mt-8 flex gap-4">
+<img class="w-32 h-32 rounded-lg object-cover border border-primary/20" data-alt="Close up of a highly detailed glowing gold ancient Chinese Qimen Dunjia celestial map with digital data overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVGoWqEUiiCKWdzBdiAE0-RqGqPdfFk8Xa3qTJhgD1yzqZkBEUzD4SPxJZHD7nsT8P3Ik0T7UwPHPB7HBaas33UhRYLmrau-DoCk8khba2qDw7DcqH-huM5wDyV24RdOJTz7s6tLuSrwKtsR4tj7Gp_poMeefx_kwhnk-UKhStDYWbefKcItH3gYEQhoIhUxD8uJy_wIlnnlae3Cim4Koe9xOXuRnAUBkx8Utv0sxfiLyCaW8wwcnumPNvmHb5SBD7BnLQC-pEc0"/>
+<img class="w-32 h-32 rounded-lg object-cover border border-primary/20" data-alt="Abstract blue and gold neural network representing artificial intelligence processing cosmic data points" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXq6rJqaH4eH0_suFcFz2TV4569odnqIbaze0YnQS-HJgo1vphG0Flm1ZC8MwSIGPv5zDwVbAIiWGC3CTcblOZ1JVusfZPQ9XaOuwI8zS5C8xrDPB0YyYkmcabs1Yrl7tA5X3NUe0HpFqkmcyzFul4837VRsi7va6gB_ft9VbtPJ6DphSszgdPUrINUJBKW1xM89nGn5H92CGJOhRhEp0Or4S9iuxPzAw76UZ9uIOjQ6BnCn7fwHSomC9PSA0_XJHwcCis11jPk64"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="py-24 px-8 text-center max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl font-bold mb-6">AI + 奇门 = 放大结果的工具</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12">
+            你不需要成为大师，也不需要懂深奥的代码。
+            你只需要<span class="text-primary font-bold">“对的方法”</span>。
+            奇门指引方向，AI 极速执行。
+        </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1">
+<div class="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent col-span-3 mb-12"></div>
+</div>
+</section>
+<!-- Curriculum Section (Bento Grid) -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-primary tracking-widest text-sm font-bold">CURRICULUM</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mt-4">2小时内，我们将彻底拆解</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-2xl flex flex-col justify-between group hover:bg-surface-container transition-colors relative overflow-hidden">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">explore</span>
+<div>
+<h3 class="text-2xl font-bold mb-4">看懂你适合的副业方向</h3>
+<p class="text-on-surface-variant text-lg">不再盲目跟风，通过奇门局看透你的天生财富基因，锁定高胜率赛道。</p>
+</div>
+<div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high p-10 rounded-2xl flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">payments</span>
+<h3 class="text-2xl font-bold mb-4">如何把技能变成收入</h3>
+<p class="text-on-surface-variant">从“有点特长”到“稳定接单”的商业化闭环逻辑。</p>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary p-10 rounded-2xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="text-2xl font-bold">用AI帮你省时间、放大结果</h3>
+</div>
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-2xl flex items-center gap-8">
+<div class="hidden sm:block">
+<span class="material-symbols-outlined text-primary text-6xl">verified</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">不再盲目尝试，直接走对路</h3>
+<p class="text-on-surface-variant">减少试错成本，你的时间是这个时代最昂贵的资产。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Success Indicators -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-6xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<h2 class="font-headline text-4xl font-bold">真实见证</h2>
+<p class="text-primary font-medium">已有 1,200+ 学员通过这套逻辑开启了新的可能</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface rounded-xl aura-shadow">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic mb-6">“以前总觉得自己不适合赚钱，听完后才发现是方向反了。上个月开始接单，赚了第一份副业收入。”</p>
+<p class="font-bold">— 晓枫, 某互联网大厂设计</p>
+</div>
+<div class="p-8 bg-surface rounded-xl aura-shadow">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic mb-6">“AI 工具原来可以这样配合我的副业，工作量直接减半，收入反而多了。感谢这次分享。”</p>
+<p class="font-bold">— 王先生, 自由撰稿人</p>
+</div>
+<div class="p-8 bg-surface rounded-xl aura-shadow">
+<div class="flex items-center gap-2 text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic mb-6">“有人已经开始接单、建立副业、有额外收入。不要再等，现在的机会就在眼前。”</p>
+<p class="font-bold">— 成功案例 A</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24 px-8 max-w-4xl mx-auto">
+<h2 class="font-headline text-3xl font-bold mb-12 text-center">常见问题</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-bold text-primary mb-3">Q: 我完全没基础可以吗?</h3>
+<p class="text-on-surface-variant">A: 可以，这场就是给新手的。我们会用最通俗易懂的逻辑带你入门。</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-bold text-primary mb-3">Q: 真的只是分享吗?</h3>
+<p class="text-on-surface-variant">A: 是分享，但会讲很多关键重点。我们的目标是让你在这2小时内拿走能落地的洞察。</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-bold text-primary mb-3">Q: 需要准备什么?</h3>
+<p class="text-on-surface-variant">A: 不要只是来听爽，准备好笔记，认真听你会看到前所未有的机会。</p>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-surface relative overflow-hidden text-center px-8">
+<div class="absolute inset-0 celestial-glow opacity-5 pointer-events-none"></div>
+<div class="max-w-3xl mx-auto relative z-10">
+<h2 class="font-headline text-5xl font-bold mb-8 italic text-primary">完全免费</h2>
+<p class="text-2xl font-bold mb-12 tracking-wide">（只开放给行动的人）</p>
+<div class="space-y-4 mb-16 text-lg">
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-error">notification_important</span>
+<span>🚨 只限 30人（小班）</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-error">notification_important</span>
+<span>🚨 不提供回放</span>
+</div>
+<div class="flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-error">notification_important</span>
+<span>🚨 迟到可能进不来</span>
+</div>
+</div>
+<a class="celestial-glow text-on-primary px-16 py-6 rounded-md font-bold text-2xl aura-shadow hover:scale-105 transition-transform mb-6 w-full sm:w-auto inline-block" href="https://wa.link/w3vuoj" rel="noopener noreferrer" target="_blank">
+                立即预留名额
+            </a>
+<p class="text-on-surface-variant text-sm mt-4">一旦满额，预约链接将自动失效</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-[#44474c]/15 bg-[#11131d]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="text-lg font-bold text-[#e9c349]">AI + QIMEN</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-sm uppercase tracking-widest">
+<a class="text-slate-500 hover:text-[#e9c349] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#e9c349] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-[#e9c349] transition-colors" href="#">Contact Support</a>
+<a class="text-[#e9c349] font-bold" href="https://wa.link/w3vuoj" rel="noopener noreferrer" target="_blank">Register Now</a>
+</div>
+<div class="font-['Inter'] text-sm uppercase tracking-widest text-slate-500 opacity-80 hover:opacity-100 transition-opacity">
+                © 2024 CELESTIAL LOGIC. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
